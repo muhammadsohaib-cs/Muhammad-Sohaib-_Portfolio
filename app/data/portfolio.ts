@@ -88,7 +88,7 @@ export const portfolioData = {
     {
       degree: "Bachelors in Software Engineering",
       institution: "Salim Habib University",
-      period: "2024 - Present",
+      period: "2025 - Present",
       description:
         "Pursuing core studies in Software Engineering with a focus on programming, data structures, Statistics, and system design.",
     },
@@ -102,7 +102,7 @@ export const portfolioData = {
     {
       degree: "Certification in Tech Entrepreneurial Development",
       institution: "Institute of Business Administration",
-      period: "2024 - 2025",
+      period: "2023 - 2024",
       description:
         "Focused on building innovative tech solutions, fostering creativity, and driving entrepreneurial growth.",
     },
