@@ -53,7 +53,7 @@ export const portfolioData = {
       tech: ["C++", "SFML"],
       codeUrl: "#",
       liveUrl: "#",
-      image: "/projects/zune.jpg",
+      image: "/projects/zune.JPG",
       isFeatured: false,
     },
     {
