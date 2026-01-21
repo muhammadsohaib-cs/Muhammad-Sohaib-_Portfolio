@@ -68,7 +68,7 @@ export default function Overlay() {
                             download
                             className="px-8 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-white font-medium rounded-full flex items-center gap-2 hover:bg-white/10 hover:border-white/20 transition-all group"
                         >
-                            Download CV
+                            My Resume
                             <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
                         </a>
                     </div>

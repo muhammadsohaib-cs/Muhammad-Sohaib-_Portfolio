@@ -26,13 +26,13 @@ function ParticleField() {
         if (!meshRef.current) return;
 
         // Slow rotation over time
-        meshRef.current.rotation.x = state.clock.getElapsedTime() * 0.01;
+        meshRef.current.rotation.x = state.clock.getElapsedTime() * 0.03;
         meshRef.current.rotation.y = state.clock.getElapsedTime() * 0.03;
 
         // Mouse interaction parallax
         const { x, y } = state.pointer;
-        meshRef.current.rotation.x += y * 0.05;
-        meshRef.current.rotation.y += x * 0.05;
+        meshRef.current.rotation.x += y * 0.1;
+        meshRef.current.rotation.y += x * 0.1;
     });
 
     return (
