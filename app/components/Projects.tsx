@@ -13,8 +13,8 @@ export default function Projects() {
     return (
         <Section id="projects" className="py-20">
             <div className="space-y-4 mb-16 text-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">
-                    My <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">Projects</span>
+                <h2 className="text-5xl md:text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600">
+                    My Projects
                 </h2>
                 <p className="text-gray-400">A showcase of innovative solutions and creative implementations</p>
             </div>
