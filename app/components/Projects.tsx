@@ -7,8 +7,9 @@ import { Github, ExternalLink, Code2, MonitorPlay } from "lucide-react";
 import Image from "next/image";
 
 export default function Projects() {
-    const featuredProjects = portfolioData.projects.filter(p => p.isFeatured);
-    const otherProjects = portfolioData.projects.filter(p => !p.isFeatured);
+    // Ensure we have data before rendering
+    const featuredProjects = portfolioData?.projects?.filter(p => p.isFeatured) || [];
+    const otherProjects = portfolioData?.projects?.filter(p => !p.isFeatured) || [];
 
     return (
         <Section id="projects" className="py-20">
@@ -27,11 +28,12 @@ export default function Projects() {
                         key={index}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false, amount: 0.2 }}
+                        // Fix: Set once: true and lower amount to trigger sooner
+                        viewport={{ once: true, amount: 0.1 }} 
                         transition={{ duration: 0.8 }}
                         className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
                     >
-                        {/* Project Content */}
+                        {/* ... existing project content ... */}
                         <div className="flex-1 space-y-6">
                             <h3 className="text-3xl font-bold text-white">{project.title}</h3>
                             <p className="text-gray-300 leading-relaxed text-lg">
@@ -83,10 +85,12 @@ export default function Projects() {
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false, amount: 0.2 }}
+                            // Fix: Set once: true
+                            viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="group bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-purple-500/30 hover:bg-white/10 transition-all duration-300"
                         >
+                            {/* ... existing card content ... */}
                             <div className="relative h-48 w-full overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
                                 <Image
@@ -104,7 +108,7 @@ export default function Projects() {
                                 <p className="text-gray-400 text-sm line-clamp-3">
                                     {project.description}
                                 </p>
-
+                                {/* ... rest of content ... */}
                                 <div className="flex flex-wrap gap-2">
                                     {project.tech.slice(0, 3).map((t, i) => (
                                         <span key={i} className="px-2 py-1 rounded text-xs bg-black/30 border border-white/10 text-gray-400">

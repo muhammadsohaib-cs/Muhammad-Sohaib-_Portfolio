@@ -19,9 +19,9 @@ export default function Section({ id, title, children, className = "" }: Section
                 transition={{
                     duration: 1,
                     ease: [0.25, 0.1, 0.25, 1],
-                    staggerChildren: 0.2
                 }}
-                viewport={{ once: false, amount: 0.3 }}
+                // Fix: Set once: true to prevent content from hiding when scrolling up/down
+                viewport={{ once: true, amount: 0.1 }} 
             >
                 {title && (
                     <motion.h2
@@ -29,7 +29,7 @@ export default function Section({ id, title, children, className = "" }: Section
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                     >
                         {title}
                     </motion.h2>
@@ -39,7 +39,7 @@ export default function Section({ id, title, children, className = "" }: Section
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                 >
                     {children}
                 </motion.div>
