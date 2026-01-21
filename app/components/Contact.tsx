@@ -31,7 +31,7 @@ export default function Contact() {
                             <div className="p-3 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors border border-white/10">
                                 <Mail className="w-5 h-5 text-purple-400" />
                             </div>
-                            <span className="text-lg">contact@muhammadsohaib.dev</span>
+                            <span className="text-lg">muhammadsohaib.19477@gmail.com</span>
                         </motion.a>
 
                         <motion.a

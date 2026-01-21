@@ -56,9 +56,9 @@ export const portfolioData = {
             title: "Personal Portfolio – Full Stack Developer",
             description: "A modern, responsive portfolio website showcasing my skills, projects, and experience using Next.js and Three.js.",
             tech: ["NextJS", "Framer Motion", "Tailwind CSS", "+3"],
-            codeUrl: "#",
-            liveUrl: "#",
-            image: "/projects/portfolio.png",
+            codeUrl: "https://github.com/muhammadsohaib-cs/Muhammad-Sohaib-_Portfolio.git",
+            liveUrl: "https://muhammadsohaibdev.vercel.app/",
+            image: "/projects/portfolio_img.jpeg",
             isFeatured: false
         }
     ],
